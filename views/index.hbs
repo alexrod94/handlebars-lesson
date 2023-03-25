@@ -1,0 +1,20 @@
+    <h2>Hello from handlebars</h2>
+    <p>Your name is {{name}} and you're {{age}} years old</p>
+    <p>Your bootcamp is {{{bootcamp}}}</p>
+    {{#if active}}
+        <p>Active</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis quos aliquid quam fuga veniam iusto molestiae eos quas porro sequi.</p>
+
+    {{else}}
+        <p>Inactive</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    {{/if}}
+
+    {{#unless adress}}
+        <p>We don't have an address!</p>
+    {{/unless}}
+
+    <p>My hobbies are:</p>
+    {{#each hobbies}}
+        <li>{{this}}</li>
+    {{/each}}
